@@ -1,0 +1,71 @@
+
+
+version: "1"    
+
+engines:
+  structure:
+    enabled: true
+
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - dart
+      paths:
+        - "**/*.dart"
+
+ratings:
+  paths:
+    - "**/*.dart"
+
+checks:
+  argument-count:
+    config:
+      languages:
+        - dart
+      threshold: 4
+  complex-logic:
+    config:
+      languages:
+        - dart
+      threshold: 4
+  file-lines:
+    config:
+      languages:
+        - dart
+      threshold: 250
+  method-complexity:
+    config:
+      languages:
+        - dart
+      threshold: 5
+  method-count:
+    config:
+      languages:
+        - dart
+      threshold: 20
+  method-lines:
+    config:
+      languages:
+        - dart
+      threshold: 25
+  nested-control-flow:
+    config:
+      languages:
+        - dart
+      threshold: 4
+  return-statements:
+    config:
+      languages:
+        - dart
+      threshold: 4
+  similar-code:
+    config:
+      languages:
+        - dart
+      threshold: # language-specific defaults. an override will affect all languages.
+  identical-code:
+    languages:
+        - dart
+    config:
+      threshold: # language-specific defaults. an override will affect all languages.
